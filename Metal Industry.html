@@ -1,0 +1,166 @@
+
+<!-- saved from url=(0033)http://127.0.0.1:5500/index3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>
+   Metal Industry
+  </title>
+
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#8174A0, #A888B5, #EFB6C8, #FFD2A0);
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: limegreen;
+            color: #888;
+            font-size: 16px;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .card {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card .category {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+        .card .author {
+            color: #888;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .card .title {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        .card .description {
+            color: #888;
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <a class="active" href="http://127.0.0.1:5500/index.html">
+    Maharashtra
+   </a>
+   <a href="http://127.0.0.1:5500/index2.html">
+    History
+   </a>
+   <a href="http://127.0.0.1:5500/index3.html">
+    pros&amp;cons
+   </a>
+   <a href="http://127.0.0.1:5500/index3.html#">
+    Technology
+   </a>
+   <a href="Metal Industry.html">
+    AQI
+   </a>
+   <a href="top 10.html">
+    Top 10 industrys
+   </a>
+  </div>
+  <div class="container">
+   <div class="card">
+    <img alt="Aerial view of Maharashtra Metal Industries Pvt. Ltd. factory" src="f4hosb14.png">
+    <div class="title">
+        Good AQI (Low Pollution)
+
+    </div>
+    <div class="description">
+        Mahabaleshwar – A hill station known for its clean air and pleasant climate. The AQI here is generally favorable.
+        Matheran – Another hill station close to Mumbai, offering cleaner air due to fewer vehicles and more greenery.
+        Alibaug – Coastal areas like Alibaug tend to have better air quality, though it's also impacted by traffic and construction during peak tourist seasons.
+        Lavasa – Located in the Western Ghats, Lavasa typically has a cleaner air quality, being a planned city surrounded by hills.
+        Tungarli Lake (Lonavala) – A quieter area with better air quality compared to bustling towns.
+         
+   </div>
+   <div class="card">
+    <img alt="Close-up of a metal coil in a factory" src="Screenshot 2025-01-30 113644.png">
+    <div class="title">
+        Bad AQI (High Pollution)    </div>
+    <div class="description">
+        Mumbai – Due to high traffic density, industrial activity, and construction, Mumbai regularly experiences poor air quality, particularly during the winter months.
+        Pune – While Pune is generally cleaner than Mumbai, it still faces air quality issues, especially during the festival season when fireworks increase pollution.
+        Nagpur – Urbanization and traffic have led to higher pollution levels, making the AQI in Nagpur quite unhealthy at times.
+        Nashik – The increase in industrial activity and vehicle emissions has led to worsening air quality, especially during harvest seasons when dust is prevalent.
+        Solapur – The AQI in Solapur can reach unhealthy levels, particularly due to agricultural practices like crop burning and increasing urbanization.
+   </div>
+  </div>
+ <!-- Code injected by live-server --><div data-aqi-widget-payload="https://www.aqi.in/widget?p=eyJvX3ciOjEsIm9fd190X3UiOiJjIiwib190IjoibCIsIndfdF9pIjoyLCJscyI6W3siaSI6IlB1bmUiLCJzIjoiY2l0eUlkIn1dfQ=="> <script src="https://www.aqi.in/scripts/widget.min.js"></script> </div>
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
